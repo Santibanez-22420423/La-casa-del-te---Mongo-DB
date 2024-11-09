@@ -1,0 +1,31 @@
+use("La_casa_del_te")
+
+db.clasificaciones.insertMany(
+    [
+        {
+            "id_clasificacion": 1,
+            "nombre": "Sistema circulatorio",
+            "descripcion": "También conocido como sistema cardiovascular, es el sistema responsable de transportar sangre y nutrientes a todas las células del\r\n\t\ty eliminar los desechos."
+        },
+        {
+            "id_clasificacion": 2,
+            "nombre": "Sistema cardiovascular",
+            "descripcion": "Es el sistema responsable de eliminar el dióxido de carbono y desechos, regular la temperatura corporal y mantener la presión arterial."
+        },
+        {
+            "id_clasificacion": 3,
+            "nombre": "Sistema nervioso",
+            "descripcion": "Es el sistema responsable de controlar y coordinar los movimientos voluntarios, registrar y procesar la información sensorial,\r\n\t\tcontrolar las funciones autónomas (respiración, digestión, circulación), procesar la información emocional y cognitiva."
+        },
+        {
+            "id_clasificacion": 4,
+            "nombre": "Sistema respiratorio",
+            "descripcion": "Es el sistema responsable de intercambiar oxígeno y dióxido de carbono, regular el pH sanguíneo, eliminar dióxido de carbono,\r\n\t\tproporcionar oxígeno a las células."
+        },
+        {
+            "id_clasificacion": 5,
+            "nombre": "Sistema inmunológico",
+            "descripcion": "Es el sistema responsable de proteger al cuerpo contra patógenos, células cancerígenas, tóxinas y agentes extraños."
+        }
+    ]
+)
