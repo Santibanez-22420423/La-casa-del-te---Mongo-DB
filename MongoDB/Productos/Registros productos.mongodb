@@ -1,0 +1,358 @@
+use("La_casa_del_te")
+
+db.productos.insertMany(
+    [
+        {
+            "id_producto": 1,
+            "id_clasificacion": 1,
+            "id_lote": 2,
+            "id_proveedor": 1,
+            "nombre": "Castaño de indias",
+            "existencia": 14,
+            "costo": "46.00",
+            "precio": "50.60",
+            "caracteristicas": "60 cápsulas de 650mg"
+        },
+        {
+            "id_producto": 2,
+            "id_clasificacion": 1,
+            "id_lote": 36,
+            "id_proveedor": 2,
+            "nombre": "No varis",
+            "existencia": 27,
+            "costo": "89.00",
+            "precio": "96.12",
+            "caracteristicas": "60 cápsulas de 500mg"
+        },
+        {
+            "id_producto": 3,
+            "id_clasificacion": 1,
+            "id_lote": 4,
+            "id_proveedor": 3,
+            "nombre": "Hemorrostop",
+            "existencia": 17,
+            "costo": "138.00",
+            "precio": "146.28",
+            "caracteristicas": "120 cápsulas de 450mg"
+        },
+        {
+            "id_producto": 4,
+            "id_clasificacion": 1,
+            "id_lote": 1,
+            "id_proveedor": 4,
+            "nombre": "Varisalud",
+            "existencia": 4,
+            "costo": "95.00",
+            "precio": "98.80",
+            "caracteristicas": "60 tabletas de 500mg"
+        },
+        {
+            "id_producto": 5,
+            "id_clasificacion": 2,
+            "id_lote": 6,
+            "id_proveedor": 5,
+            "nombre": "Ajo negro",
+            "existencia": 2,
+            "costo": "76.00",
+            "precio": "83.60",
+            "caracteristicas": "50 cápsulas de 400mg"
+        },
+        {
+            "id_producto": 6,
+            "id_clasificacion": 2,
+            "id_lote": 3,
+            "id_proveedor": 1,
+            "nombre": "Hierba del sapo",
+            "existencia": 17,
+            "costo": "85.00",
+            "precio": "91.80",
+            "caracteristicas": "50 tabletas de 400mg"
+        },
+        {
+            "id_producto": 7,
+            "id_clasificacion": 2,
+            "id_lote": 8,
+            "id_proveedor": 2,
+            "nombre": "Omega 3 Alaska",
+            "existencia": 8,
+            "costo": "250.00",
+            "precio": "265.00",
+            "caracteristicas": "100 cápsulas de 1000mg"
+        },
+        {
+            "id_producto": 8,
+            "id_clasificacion": 2,
+            "id_lote": 5,
+            "id_proveedor": 3,
+            "nombre": "Omega 3 premium",
+            "existencia": 17,
+            "costo": "270.00",
+            "precio": "286.20",
+            "caracteristicas": "60 cápsulas de 2150mg"
+        },
+        {
+            "id_producto": 9,
+            "id_clasificacion": 3,
+            "id_lote": 10,
+            "id_proveedor": 4,
+            "nombre": "Neo San Juan",
+            "existencia": 13,
+            "costo": "85.00",
+            "precio": "93.50",
+            "caracteristicas": "100 cápsulas de 400mg"
+        },
+        {
+            "id_producto": 10,
+            "id_clasificacion": 3,
+            "id_lote": 7,
+            "id_proveedor": 5,
+            "nombre": "Espinoforte",
+            "existencia": 21,
+            "costo": "85.00",
+            "precio": "91.80",
+            "caracteristicas": "30 cápsulas de 450mg"
+        },
+        {
+            "id_producto": 11,
+            "id_clasificacion": 3,
+            "id_lote": 11,
+            "id_proveedor": 1,
+            "nombre": "Taflavix",
+            "existencia": 23,
+            "costo": "103.00",
+            "precio": "109.18",
+            "caracteristicas": "40 cápsulas"
+        },
+        {
+            "id_producto": 12,
+            "id_clasificacion": 3,
+            "id_lote": 9,
+            "id_proveedor": 2,
+            "nombre": "Valeriana",
+            "existencia": 2,
+            "costo": "53.00",
+            "precio": "56.18",
+            "caracteristicas": "50 cápsulas de 450mg"
+        },
+        {
+            "id_producto": 13,
+            "id_clasificacion": 4,
+            "id_lote": 14,
+            "id_proveedor": 3,
+            "nombre": "Vitabronc",
+            "existencia": 5,
+            "costo": "58.00",
+            "precio": "63.80",
+            "caracteristicas": "30 cápsulas de 450mg"
+        },
+        {
+            "id_producto": 14,
+            "id_clasificacion": 4,
+            "id_lote": 11,
+            "id_proveedor": 4,
+            "nombre": "Abango",
+            "existencia": 1,
+            "costo": "76.00",
+            "precio": "82.08",
+            "caracteristicas": "220 ml"
+        },
+        {
+            "id_producto": 15,
+            "id_clasificacion": 4,
+            "id_lote": 16,
+            "id_proveedor": 5,
+            "nombre": "Guayacol",
+            "existencia": 23,
+            "costo": "80.00",
+            "precio": "84.80",
+            "caracteristicas": "30 cápsulas de 650mg"
+        },
+        {
+            "id_producto": 16,
+            "id_clasificacion": 4,
+            "id_lote": 13,
+            "id_proveedor": 1,
+            "nombre": "Eucamiel",
+            "existencia": 21,
+            "costo": "74.00",
+            "precio": "78.44",
+            "caracteristicas": "70 ml"
+        },
+        {
+            "id_producto": 17,
+            "id_clasificacion": 1,
+            "id_lote": 18,
+            "id_proveedor": 2,
+            "nombre": "Castaño de indias",
+            "existencia": 5,
+            "costo": "46.00",
+            "precio": "50.60",
+            "caracteristicas": "60 cápsulas de 650mg"
+        },
+        {
+            "id_producto": 18,
+            "id_clasificacion": 1,
+            "id_lote": 15,
+            "id_proveedor": 3,
+            "nombre": "No varis",
+            "existencia": 8,
+            "costo": "89.00",
+            "precio": "96.12",
+            "caracteristicas": "60 cápsulas de 500mg"
+        },
+        {
+            "id_producto": 19,
+            "id_clasificacion": 1,
+            "id_lote": 20,
+            "id_proveedor": 4,
+            "nombre": "Hemorrostop",
+            "existencia": 10,
+            "costo": "138.00",
+            "precio": "146.28",
+            "caracteristicas": "120 cápsulas de 450mg"
+        },
+        {
+            "id_producto": 20,
+            "id_clasificacion": 1,
+            "id_lote": 17,
+            "id_proveedor": 5,
+            "nombre": "Varisalud",
+            "existencia": 2,
+            "costo": "95.00",
+            "precio": "100.70",
+            "caracteristicas": "60 tabletas de 500mg"
+        },
+        {
+            "id_producto": 21,
+            "id_clasificacion": 2,
+            "id_lote": 22,
+            "id_proveedor": 1,
+            "nombre": "Ajo negro",
+            "existencia": 8,
+            "costo": "76.00",
+            "precio": "83.60",
+            "caracteristicas": "50 cápsulas de 400mg"
+        },
+        {
+            "id_producto": 22,
+            "id_clasificacion": 2,
+            "id_lote": 19,
+            "id_proveedor": 2,
+            "nombre": "Hierba del sapo",
+            "existencia": 12,
+            "costo": "85.00",
+            "precio": "91.80",
+            "caracteristicas": "50 tabletas de 400mg"
+        },
+        {
+            "id_producto": 23,
+            "id_clasificacion": 2,
+            "id_lote": 24,
+            "id_proveedor": 3,
+            "nombre": "Omega 3 Alaska",
+            "existencia": 10,
+            "costo": "250.00",
+            "precio": "265.00",
+            "caracteristicas": "100 cápsulas de 1000mg"
+        },
+        {
+            "id_producto": 24,
+            "id_clasificacion": 2,
+            "id_lote": 21,
+            "id_proveedor": 4,
+            "nombre": "Omega 3 premium",
+            "existencia": 7,
+            "costo": "270.00",
+            "precio": "286.20",
+            "caracteristicas": "60 cápsulas de 2150mg"
+        },
+        {
+            "id_producto": 25,
+            "id_clasificacion": 3,
+            "id_lote": 28,
+            "id_proveedor": 5,
+            "nombre": "Neo San Juan",
+            "existencia": 6,
+            "costo": "85.00",
+            "precio": "93.50",
+            "caracteristicas": "100 cápsulas de 400mg"
+        },
+        {
+            "id_producto": 26,
+            "id_clasificacion": 3,
+            "id_lote": 23,
+            "id_proveedor": 1,
+            "nombre": "Espinoforte",
+            "existencia": 10,
+            "costo": "85.00",
+            "precio": "91.80",
+            "caracteristicas": "30 cápsulas de 450mg"
+        },
+        {
+            "id_producto": 27,
+            "id_clasificacion": 3,
+            "id_lote": 30,
+            "id_proveedor": 2,
+            "nombre": "Taflavix",
+            "existencia": 4,
+            "costo": "103.00",
+            "precio": "109.18",
+            "caracteristicas": "40 cápsulas"
+        },
+        {
+            "id_producto": 28,
+            "id_clasificacion": 3,
+            "id_lote": 25,
+            "id_proveedor": 3,
+            "nombre": "Valeriana",
+            "existencia": 8,
+            "costo": "53.00",
+            "precio": "56.18",
+            "caracteristicas": "50 cápsulas de 450mg"
+        },
+        {
+            "id_producto": 29,
+            "id_clasificacion": 4,
+            "id_lote": 32,
+            "id_proveedor": 4,
+            "nombre": "Vitabronc",
+            "existencia": 2,
+            "costo": "58.00",
+            "precio": "63.80",
+            "caracteristicas": "30 cápsulas de 450mg"
+        },
+        {
+            "id_producto": 30,
+            "id_clasificacion": 4,
+            "id_lote": 27,
+            "id_proveedor": 5,
+            "nombre": "Abango",
+            "existencia": 1,
+            "costo": "76.00",
+            "precio": "82.08",
+            "caracteristicas": "220 ml"
+        },
+        {
+            "id_producto": 31,
+            "id_clasificacion": 4,
+            "id_lote": 34,
+            "id_proveedor": 1,
+            "nombre": "Guayacol",
+            "existencia": 7,
+            "costo": "80.00",
+            "precio": "84.80",
+            "caracteristicas": "30 cápsulas de 650mg"
+        },
+        {
+            "id_producto": 32,
+            "id_clasificacion": 4,
+            "id_lote": 29,
+            "id_proveedor": 2,
+            "nombre": "Eucamiel",
+            "existencia": 16,
+            "costo": "74.00",
+            "precio": "78.44",
+            "caracteristicas": "70 ml"
+        }
+    ]
+)
