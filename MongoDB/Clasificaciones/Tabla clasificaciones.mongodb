@@ -1,0 +1,25 @@
+use("La_casa_del_te")
+
+db.createCollection("clasificaciones", {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validation del objeto clasificaciones',
+            required: ['id_clasificacion', 'nombre'],
+            properties: {
+                id_clasificacion: {
+                    bsonType: 'int',
+                    description: 'Id de la clasificacion'
+                },
+                nombre: {
+                    bsonType: 'string',
+                    description: 'Nombre de la clasificacion'
+                },
+                descripcion: {
+                    bsonType: 'string',
+                    description: 'Descripcion de la clasificacion'
+                } 
+            }
+        }
+    }
+})
