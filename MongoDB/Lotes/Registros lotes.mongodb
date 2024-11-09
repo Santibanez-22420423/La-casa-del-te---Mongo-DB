@@ -1,0 +1,191 @@
+use("La_casa_del_te")
+
+db.lotes.insertMany(
+    [
+        {
+            "id_lote": 1,
+            "fecha_lote": new Date("2022-01-01"),
+            "caducidad": new Date("2027-01-01")
+        },
+        {
+            "id_lote": 2,
+            "fecha_lote": new Date("2022-01-15"),
+            "caducidad": new Date("2027-01-15")
+        },
+        {
+            "id_lote": 3,
+            "fecha_lote": new Date("2022-02-01"),
+            "caducidad": new Date("2027-02-01")
+        },
+        {
+            "id_lote": 4,
+            "fecha_lote": new Date("2022-02-15"),
+            "caducidad": new Date("2027-02-15")
+        },
+        {
+            "id_lote": 5,
+            "fecha_lote": new Date("2022-03-01"),
+            "caducidad": new Date("2027-03-01")
+        },
+        {
+            "id_lote": 6,
+            "fecha_lote":new Date("2022-03-15"),
+            "caducidad": new Date("2027-03-15")
+        },
+        {
+            "id_lote": 7,
+            "fecha_lote": new Date("2022-04-01"),
+            "caducidad": new Date("2027-04-01")
+        },
+        {
+            "id_lote": 8,
+            "fecha_lote": new Date("2022-04-15"),
+            "caducidad": new Date("2027-04-15")
+        },
+        {
+            "id_lote": 9,
+            "fecha_lote": new Date("2022-05-01"),
+            "caducidad": new Date("2027-05-01")
+        },
+        {
+            "id_lote": 10,
+            "fecha_lote": new Date("2022-05-15"),
+            "caducidad": new Date("2027-05-15")
+        },
+        {
+            "id_lote": 11,
+            "fecha_lote": new Date("2022-06-01"),
+            "caducidad": new Date("2027-06-01")
+        },
+        {
+            "id_lote": 13,
+            "fecha_lote": new Date("2022-06-15"),
+            "caducidad": new Date("2027-06-15")
+        },
+        {
+            "id_lote": 14,
+            "fecha_lote": new Date("2022-07-01"),
+            "caducidad": new Date("2027-07-01")
+        },
+        {
+            "id_lote": 15,
+            "fecha_lote": new Date("2022-07-15"),
+            "caducidad": new Date("2027-07-15")
+        },
+        {
+            "id_lote": 16,
+            "fecha_lote": new Date("2022-08-01"),
+            "caducidad": new Date("2027-08-01")
+        },
+        {
+            "id_lote": 17,
+            "fecha_lote": new Date("2022-08-15"),
+            "caducidad": new Date("2027-08-15")
+        },
+        {
+            "id_lote": 18,
+            "fecha_lote": new Date("2022-09-01"),
+            "caducidad": new Date("2027-09-01")
+        },
+        {
+            "id_lote": 19,
+            "fecha_lote":new Date("2022-09-15"),
+            "caducidad": new Date("2027-09-15")
+        },
+        {
+            "id_lote": 20,
+            "fecha_lote": new Date("2022-10-01"),
+            "caducidad": new Date("2027-10-01")
+        },
+        {
+            "id_lote": 21,
+            "fecha_lote": new Date("2022-10-15"),
+            "caducidad": new Date("2027-10-15")
+        },
+        {
+            "id_lote": 22,
+            "fecha_lote": new Date("2022-11-01"),
+            "caducidad": new Date("2027-11-01")
+        },
+        {
+            "id_lote": 23,
+            "fecha_lote": new Date("2022-11-15"),
+            "caducidad": new Date("2027-11-15")
+        },
+        {
+            "id_lote": 24,
+            "fecha_lote": new Date("2022-12-01"),
+            "caducidad": new Date("2027-12-01")
+        },
+        {
+            "id_lote": 25,
+            "fecha_lote": new Date("2022-12-15"),
+            "caducidad": new Date("2027-12-15")
+        },
+        {
+            "id_lote": 26,
+            "fecha_lote": new Date("2023-01-01"),
+            "caducidad":new Date("2028-01-01")
+        },
+        {
+            "id_lote": 27,
+            "fecha_lote": new Date("2023-01-15"),
+            "caducidad": new Date("2028-01-15")
+        },
+        {
+            "id_lote": 28,
+            "fecha_lote": new Date("2023-02-01"),
+            "caducidad": new Date("2028-02-01")
+        },
+        {
+            "id_lote": 29,
+            "fecha_lote": new Date("2023-02-15"),
+            "caducidad": new Date("2028-02-15")
+        },
+        {
+            "id_lote": 30,
+            "fecha_lote": new Date("2023-03-01"),
+            "caducidad": new Date("2028-03-01")
+        },
+        {
+            "id_lote": 31,
+            "fecha_lote": new Date("2023-03-15"),
+            "caducidad": new Date("2028-03-15")
+        },
+        {
+            "id_lote": 32,
+            "fecha_lote": new Date("2023-04-01"),
+            "caducidad": new Date("2028-04-01")
+        },
+        {
+            "id_lote": 33,
+            "fecha_lote": new Date("2023-04-15"),
+            "caducidad": new Date("2028-04-15")
+        },
+        {
+            "id_lote": 34,
+            "fecha_lote": new Date("2023-05-01"),
+            "caducidad": new Date("2028-05-01")
+        },
+        {
+            "id_lote": 35,
+            "fecha_lote": new Date("2023-05-15"),
+            "caducidad": new Date("2028-05-15")
+        },
+        {
+            "id_lote": 36,
+            "fecha_lote": new Date("2023-06-01"),
+            "caducidad": new Date("2028-06-01")
+        },
+        {
+            "id_lote": 37,
+            "fecha_lote": new Date("2023-06-15"),
+            "caducidad": new Date("2028-06-15")
+        },
+        {
+            "id_lote": 38,
+            "fecha_lote": new Date("2023-07-01"),
+            "caducidad": new Date("2028-07-01")
+        }
+    ]
+)
