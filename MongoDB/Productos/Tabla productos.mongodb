@@ -1,0 +1,45 @@
+use("La_casa_del_te")
+
+db.createCollection("productos", {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validation del objeto productos',
+            required: ['id_producto', 'id_clasificacion', 'id_proveedor', 'existencia', 'nombre'],
+            properties: {
+                id_producto: {
+                    bsonType: 'int',
+                    description: 'Id del producto'
+                },
+                id_clasificacion: {
+                    bsonType: 'int',
+                    description: 'Id de la clasificacion a la que pertenece el producto'
+                },
+                id_proveedor: {
+                    bsonType: 'int',
+                    description: 'Id del proveedor que nos vende el producto'
+                },
+                nombre: {
+                    bsonType: 'string',
+                    description: 'Nombre del producto'
+                },
+                existencia: {
+                    bsonType: 'int',
+                    description: 'Cantidad del producto que hay en stock'
+                },
+                costo: {
+                    bsonType: 'double',
+                    description: 'Costo del producto al que compramos el producto'
+                },
+                precio: {
+                    bsonType: 'double',
+                    description: 'Precio al que se vende el producto'
+                },
+                caracteristicas: {
+                    bsonType: 'string',
+                    description: 'Caracteristicas del producto'
+                }
+            }
+        }
+    }
+})
