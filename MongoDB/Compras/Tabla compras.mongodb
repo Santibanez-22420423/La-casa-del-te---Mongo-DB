@@ -1,0 +1,74 @@
+use("La_casa_del_te")
+
+db.createCollection("compras", {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validation del objeto compras',
+            required: ['id_compra', 'proveedor', 'detalle_producto_compras', 'total'],
+            properties: {
+                id_compra: {
+                    bsonType: 'int',
+                    description: 'Id de la compra'
+                },
+                fecha: {
+                    bsonType: 'date',
+                    description: 'Fecha en la que se realizó la compra'
+                },
+                metodo_pago: {
+                    bsonType: 'string',
+                    enum: ['Tarjeta', 'Efectivo', 'Mixto'],
+                    description: 'Método con el cual se pago la compra'
+                },
+                proveedor:{
+                    bsonType: 'object',
+                    description: 'Validación del objeto proveedor',
+                    properties:{
+                        id_proveedor: {
+                            bsonType: 'int',
+                            description: 'Id del proveedor que realizó la venta'
+                        },
+                        nombre: {
+                            bsonType: 'string',
+                            description: 'Nombre del proveedor que realizó la venta'
+                        }
+                    }
+                },
+                detalle_producto_compras:{
+                    bsonType: 'object',
+                    description: 'Validación del objeto detalle_producto_compras',
+                    properties:{
+                        id_producto_compra:{
+                            bsonType: 'int',
+                            description: 'Id del producto_compra'
+                        },
+                        id_producto: {
+                            bsonType: 'int',
+                            description: 'Id del producto que se compró '
+                        },
+                        producto: {
+                            bsonType: 'string',
+                            description: 'Producto que se compró'
+                        },
+                        cantidad: {
+                            bsonType: 'int',
+                            description: 'Cantidad del producto que se compró'
+                        },
+                        unitario: {
+                            bsonType: 'double',
+                            description: 'Precio unitario del producto que se compró'
+                        },
+                        subtotal: {
+                            bsonType: 'double',
+                            description: 'Subtotal de la compra del producto'
+                        }
+                    }
+                },
+                total: {
+                    bsonType: 'double',
+                    description: 'Total de la compra'
+                }
+            }
+        }
+    }
+})
