@@ -1,0 +1,41 @@
+use("La_casa_del_te")
+
+db.createCollection("devoluciones_compras", {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validation del objeto devoluciones_compras',
+            required: ['id_devolucion_compra', 'id_compra', 'id_producto', 'fecha', 'cantidad'],
+            properties: {
+                id_devolucion_compra: {
+                    bsonType: 'int',
+                    description: 'Id de la devolucion sobre la compra'
+                },
+                id_compra: {
+                    bsonType: 'int',
+                    description: 'Id de la compra'
+                },
+                id_producto: {
+                    bsonType: 'int',
+                    description: 'Id del producto'
+                },
+                fecha: {
+                    bsonType: 'date',
+                    description: 'Fecha en la que se efectua la devolucion'
+                },
+                cantidad: {
+                    bsonType: 'int',
+                    description: 'Cantidad que se devuelve'
+                },
+                unitario: {
+                    bsonType: 'double',
+                    description: 'Precio unitario del producto a devolver'
+                },
+                subtotal: {
+                    bsonType: 'double',
+                    description: 'Subtotal de los productos a devolver'
+                }
+            }
+        }
+    }
+})
