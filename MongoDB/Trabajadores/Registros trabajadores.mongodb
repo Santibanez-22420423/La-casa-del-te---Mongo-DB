@@ -1,0 +1,106 @@
+use("La_casa_del_te")
+
+db.trabajadores.insertMany(
+    [
+        {
+            "id_trabajador": 1,
+            "nombre": "Jovita lizeth",
+            "apellido": "Galvan Rojas",
+            "fecha_contratacion": "2022-01-13",
+            "direccion": "Dámaso Cárdenas #187, Sahuayo, Michoacán",
+            "celular": "3531007723",
+            "correo": "jovisg.98@gmail.com",
+            "contraseña": "J12345"
+        },
+        {
+            "id_trabajador": 2,
+            "nombre": "Mitzu Sayin",
+            "apellido": "Galvan Rojas",
+            "fecha_contratacion": "2022-10-10",
+            "direccion": "Dámaso Cárdenas #187, Sahuayo, Michoacán",
+            "celular": "3531233538",
+            "correo": "galvanmit@gmail.com",
+            "contraseña": "M12345"
+        },
+        {
+            "id_trabajador": 3,
+            "nombre": "Israel",
+            "apellido": "Galvan Rojas",
+            "fecha_contratacion": "2023-01-03",
+            "direccion": "Dámaso Cárdenas #187, Sahuayo, Michoacán",
+            "celular": "3532053638",
+            "correo": "galvanisr@gmail.com",
+            "contraseña": "I12345"
+        },
+        {
+            "id_trabajador": 4,
+            "nombre": "Sofia",
+            "apellido": "García Hernández",
+            "fecha_contratacion": "2023-04-30",
+            "direccion": "Heriberto Jara #485, Sahuayo, Michoacán",
+            "celular": "3531234567",
+            "correo": "garciasof@gmail.com",
+            "contraseña": "S12345"
+        },
+        {
+            "id_trabajador": 5,
+            "nombre": "Juan Pablo",
+            "apellido": "López Ramírez",
+            "fecha_contratacion": "2022-12-10",
+            "direccion": "Avenida Sierra #456, Sahuayo, Michoacán",
+            "celular": "3537890123",
+            "correo": "lopezjupa@gmail.com",
+            "contraseña": "J12345"
+        },
+        {
+            "id_trabajador": 6,
+            "nombre": "María Fernanda",
+            "apellido": "Rodríguez Gómez",
+            "fecha_contratacion": "2022-12-28",
+            "direccion": "Vicente Guerrero #758, Sahuayo, Michoacán",
+            "celular": "3532345678",
+            "correo": "rodriguezmar@gmail.com",
+            "contraseña": "MF12345"
+        },
+        {
+            "id_trabajador": 7,
+            "nombre": "Carlos Eduardo",
+            "apellido": "Martínez Sánchez",
+            "fecha_contratacion": "2023-05-03",
+            "direccion": "Avenida Independencia #568, Sahuayo, Michoacán",
+            "celular": "3532456789",
+            "correo": "martinezcared@gmail.com",
+            "contraseña": "CE12345"
+        },
+        {
+            "id_trabajador": 8,
+            "nombre": "Ana Karina",
+            "apellido": "Velasco Morales",
+            "fecha_contratacion": "2023-09-28",
+            "direccion": "Vallarta #537, Sahuayo, Michoacán",
+            "celular": "3539012345",
+            "correo": "velascoanakar@gmail.com",
+            "contraseña": "AK12345"
+        },
+        {
+            "id_trabajador": 9,
+            "nombre": "Luis Enrique",
+            "apellido": "Álvarez Reyes",
+            "fecha_contratacion": "2024-01-23",
+            "direccion": "Avenida Lázaro Cárdenas #568, Sahuayo, Michoacán",
+            "celular": "3535678901",
+            "correo": "alvarezluen@gmail.com",
+            "contraseña": "LE12345"
+        },
+        {
+            "id_trabajador": 10,
+            "nombre": "Daniela Alejandra",
+            "apellido": "Torres Ortiz",
+            "fecha_contratacion": "2024-05-03",
+            "direccion": "Calzada Revolución #846, Sahuayo, Michoacán",
+            "celular": "3531115897",
+            "correo": "torresdan@gmail.com",
+            "contraseña": "DA12345"
+        }
+    ]
+)
