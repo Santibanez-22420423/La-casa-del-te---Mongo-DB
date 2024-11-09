@@ -1,0 +1,79 @@
+use("La_casa_del_te")
+
+db.createCollection("ventas", {
+    validator:{
+        $jsonSchema:{
+            title: 'Validacion del objeto proveedores',
+            required: ['id_venta', 'id_cliente', 'id_trabajador', 'metodo_pago' ],
+            properties: {
+                id_venta: {
+                    bsonType: 'int'
+                },
+                fecha: {
+                    bsonType: 'date'
+                }, 
+                metodo_pago: {
+                    bsonType: 'string',
+                    enum: ['Tarjeta', 'Efectivo', 'Mixto']
+                },
+                cliente:{
+                    bsonType: 'object',
+                    properties: {
+                        id_cliente: {
+                            bsonType: 'int'
+                        },
+                        nombre: {
+                            bsonType: 'string'
+                        }
+                    }
+                },
+                trabajador: {
+                    bsonType: 'object',
+                    properties: {
+                        id_trabajador: {
+                            bsonType: 'int'
+                        },
+                        nombre: {
+                            bsonType: 'string'
+                        }
+                    }
+                },
+                detalle_productos_ventas:{
+                    bsonType: 'object',
+                    properties: {
+                        id_producto_venta:{
+                            bsonType: 'int'
+                        },
+                        id_producto:{
+                            bsonType: 'int'
+                        },
+                        producto: {
+                            bsonType: 'string'
+                        },
+                        cantidad:{
+                            bsonType: 'int'
+                        },
+                        unitario:{
+                            bsonType: 'double'
+                        },
+                        subtotal: {
+                            bsonType: 'double'
+                        },
+                        descuento_porcentaje: {
+                            bsonType: 'double'
+                        },
+                        descuento_pesos:{
+                            bsonType: 'double'
+                        }, 
+                        subtotal_con_descuento: {
+                            bsonType: 'double'
+                        }
+                    }
+                },
+                total: {
+                    bsonType: 'total'
+                }
+            }
+        }
+    }
+})    
