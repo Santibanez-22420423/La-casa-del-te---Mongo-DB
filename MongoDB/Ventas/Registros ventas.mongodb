@@ -1,0 +1,598 @@
+use("La_casa_del_te")
+
+db.trabajadores_jornadas.insertMany(
+    [
+        {
+            "id_venta": 1,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 5,
+                "nombre": "Carlos Sánchez Torres"
+            },
+            "trabajador": {
+                "id_trabajador": 1,
+                "nombre_t": "Jovita lizeth Galvan Rojas"
+            },
+            "detalle_productos_ventas": [
+                {
+                    "id_producto_venta": 1,
+                    "id_producto": 1,
+                    "nombre": "Castaño de indias",
+                    "cantidad": 2,
+                    "unitario": 50.60,
+                    "subtotal": 101.20,
+                    "descuento_porcentaje": 5,
+                    "descuento_pesos": 5.06,
+                    "subtotal_con_descuento": 96.14
+                },
+                {
+                    "id_producto_venta": 2,
+                    "id_producto": 10,
+                    "nombre": "Espinoforte",
+                    "cantidad": 1,
+                    "unitario": 91.80,
+                    "subtotal": 91.80,
+                    "descuento_porcentaje": 5,
+                    "descuento_pesos": 4.59,
+                    "subtotal_con_descuento": 87.21
+                },
+                {
+                    "id_producto_venta": 3,
+                    "id_producto": 7,
+                    "nombre": "Omega 3 Alaska",
+                    "cantidad": 1,
+                    "unitario": 265.00,
+                    "subtotal": 265.00,
+                    "descuento_porcentaje": 5,
+                    "descuento_pesos": 13.25,
+                    "subtotal_con_descuento": 251.75
+                }
+            ],
+            "total": 435.10
+        },
+        {
+            "id_venta": 2,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 1,
+                "nombre": "Juan Pérez García"
+            },
+            "trabajador": {
+                "id_trabajador": 1,
+                "nombre_t": "Jovita lizeth Galvan Rojas"
+            },
+            "detalle_productos_ventas": [
+                {
+                    "id_producto_venta": 4,
+                    "id_producto": 2,
+                    "nombre": "No varis",
+                    "cantidad": 2,
+                    "unitario": 96.12,
+                    "subtotal": 192.24,
+                    "descuento_porcentaje": 5,
+                    "descuento_pesos": 9.61,
+                    "subtotal_con_descuento": 182.63
+                },
+                {
+                    "id_producto_venta": 5,
+                    "id_producto": 12,
+                    "nombre": "Valeriana",
+                    "cantidad": 3,
+                    "unitario": 56.18,
+                    "subtotal": 168.54,
+                    "descuento_porcentaje": 5,
+                    "descuento_pesos": 8.43,
+                    "subtotal_con_descuento": 160.11
+                }
+            ],
+            "total": 342.74
+        },
+        {
+            "id_venta": 3,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 12,
+                "nombre": "Patricia Morales Ortega"
+            },
+            "trabajador": {
+                "id_trabajador": 2,
+                "nombre_t": "Mitzu Sayin Galvan Rojas"
+            },
+            "detalle_productos_ventas": [
+                {
+                    "id_producto_venta": 6,
+                    "id_producto": 4,
+                    "nombre": "Varisalud",
+                    "cantidad": 1,
+                    "unitario": 98.80,
+                    "subtotal": 98.80,
+                    "descuento_porcentaje": 7,
+                    "descuento_pesos": 6.92,
+                    "subtotal_con_descuento": 91.88
+                },
+                {
+                    "id_producto_venta": 7,
+                    "id_producto": 9,
+                    "nombre": "Neo San Juan",
+                    "cantidad": 2,
+                    "unitario": 93.50,
+                    "subtotal": 187.00,
+                    "descuento_porcentaje": 7,
+                    "descuento_pesos": 13.09,
+                    "subtotal_con_descuento": 173.91
+                }
+            ],
+            "total": 265.79
+        },
+        {
+            "id_venta": 4,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Tarjeta",
+            "cliente": {
+                "id_cliente": 7,
+                "nombre": "Javier Díaz Castro"
+            },
+            "trabajador": {
+                "id_trabajador": 2,
+                "nombre_t": "Mitzu Sayin Galvan Rojas"
+            },
+            "detalle_productos_ventas": [
+                {
+                    "id_producto_venta": 8,
+                    "id_producto": 8,
+                    "nombre": "Omega 3 premium",
+                    "cantidad": 3,
+                    "unitario": 286.20,
+                    "subtotal": 858.60
+                }
+            ]
+        },
+        {
+            "id_venta": 5,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 3,
+                "nombre": "Luis Rodríguez Martínez"
+            },
+            "trabajador": {
+                "id_trabajador": 2,
+                "nombre_t": "Mitzu Sayin Galvan Rojas"
+            },
+            "detalle_productos_ventas": [
+                {
+                    "id_producto_venta": 9,
+                    "id_producto": 11,
+                    "nombre": "Taflavix",
+                    "cantidad": 1,
+                    "unitario": 109.18,
+                    "subtotal": 109.18,
+                    "descuento_porcentaje": 1,
+                    "descuento_pesos": 1.09,
+                    "subtotal_con_descuento": 108.09
+                }
+            ],
+            "total": 108.09
+        },
+        {
+            "id_venta": 6,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 2,
+                "nombre": "María Gómez López"
+            },
+            "trabajador": {
+                "id_trabajador": 4,
+                "nombre_t": "Sofia García Hernández"
+            },
+            "detalle_productos_ventas": [
+                {
+                    "id_producto_venta": 10,
+                    "id_producto": 15,
+                    "nombre": "Guayacol",
+                    "cantidad": 2,
+                    "unitario": 84.80,
+                    "subtotal": 169.60,
+                    "descuento_porcentaje": 3,
+                    "descuento_pesos": 5.09,
+                    "subtotal_con_descuento": 164.51
+                },
+                {
+                    "id_producto_venta": 11,
+                    "id_producto": 13,
+                    "nombre": "Vitabronc",
+                    "cantidad": 1,
+                    "unitario": 63.80,
+                    "subtotal": 63.80,
+                    "descuento_porcentaje": 3,
+                    "descuento_pesos": 1.91,
+                    "subtotal_con_descuento": 61.89
+                },
+                {
+                    "id_producto_venta": 12,
+                    "id_producto": 3,
+                    "nombre": "Hemorrostop",
+                    "cantidad": 3,
+                    "unitario": 146.28,
+                    "subtotal": 438.84,
+                    "descuento_porcentaje": 3,
+                    "descuento_pesos": 13.17,
+                    "subtotal_con_descuento": 425.67
+                },
+                {
+                    "id_producto_venta": 13,
+                    "id_producto": 4,
+                    "nombre": "Varisalud",
+                    "cantidad": 1,
+                    "unitario": 98.80,
+                    "subtotal": 98.80,
+                    "descuento_porcentaje": 3,
+                    "descuento_pesos": 2.96,
+                    "subtotal_con_descuento": 95.84
+                }
+            ],
+            "total": 747.91
+        },
+        {
+            "id_venta": 7,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 10,
+                "nombre": "Elena Fernández Ruiz"
+            },
+            "trabajador": {
+                "id_trabajador": 6,
+                "nombre_t": "María Fernanda Rodríguez Gómez"
+            },
+            "detalle_productos_ventas": [
+                {
+                    "id_producto_venta": 14,
+                    "id_producto": 10,
+                    "nombre": "Espinoforte",
+                    "cantidad": 1,
+                    "unitario": 91.80,
+                    "subtotal": 91.80,
+                    "descuento_porcentaje": 1,
+                    "descuento_pesos": 0.92,
+                    "subtotal_con_descuento": 90.88
+                }
+            ],
+            "total": 90.88
+        },
+        {
+            "id_venta": 8,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 7,
+                "nombre": "Javier Díaz Castro"
+            },
+            "trabajador": {
+                "id_trabajador": 10,
+                "nombre_t": "Daniela Alejandra Torres Ortiz"
+            },
+            "detalle_productos_ventas": [
+                {
+                    "id_producto_venta": 15,
+                    "id_producto": 16,
+                    "nombre": "Eucamiel",
+                    "cantidad": 2,
+                    "unitario": 78.44,
+                    "subtotal": 156.88
+                },
+                {
+                    "id_producto_venta": 16,
+                    "id_producto": 9,
+                    "nombre": "Neo San Juan",
+                    "cantidad": 1,
+                    "unitario": 93.50,
+                    "subtotal": 93.50
+                }
+            ]
+        },
+        {
+            "id_venta": 9,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Tarjeta",
+            "cliente": {
+                "id_cliente": 9,
+                "nombre": "Miguel Torres Jiménez"
+            },
+            "trabajador": {
+                "id_trabajador": 6,
+                "nombre_t": "María Fernanda Rodríguez Gómez"
+            },
+            "detalle_productos_ventas": [
+                {
+                    "id_producto_venta": 17,
+                    "id_producto": 5,
+                    "nombre": "Ajo negro",
+                    "cantidad": 3,
+                    "unitario": 83.60,
+                    "subtotal": 250.80,
+                    "descuento_porcentaje": 2,
+                    "descuento_pesos": 5.02,
+                    "subtotal_con_descuento": 245.78
+                }
+            ],
+            "total": 245.78
+        },
+        {
+            "id_venta": 10,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Mixto",
+            "cliente": {
+                "id_cliente": 1,
+                "nombre": "Juan Pérez García"
+            },
+            "trabajador": {
+                "id_trabajador": 5,
+                "nombre_t": "Juan Pablo López Ramírez"
+            },
+            "detalle_productos_ventas": [
+                {
+                    "id_producto_venta": 18,
+                    "id_producto": 7,
+                    "nombre": "Omega 3 Alaska",
+                    "cantidad": 1,
+                    "unitario": 265.00,
+                    "subtotal": 265.00,
+                    "descuento_porcentaje": 5,
+                    "descuento_pesos": 13.25,
+                    "subtotal_con_descuento": 251.75
+                },
+                {
+                    "id_producto_venta": 19,
+                    "id_producto": 8,
+                    "nombre": "Omega 3 premium",
+                    "cantidad": 1,
+                    "unitario": 286.20,
+                    "subtotal": 286.20,
+                    "descuento_porcentaje": 5,
+                    "descuento_pesos": 14.31,
+                    "subtotal_con_descuento": 271.89
+                }
+            ],
+            "total": 523.64
+        },
+        {
+            "id_venta": 13,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Tarjeta",
+            "cliente": {
+                "id_cliente": 3,
+                "nombre": "Luis Rodríguez Martínez"
+            },
+            "trabajador": {
+                "id_trabajador": 3,
+                "nombre_t": "Israel Galvan Rojas"
+            }
+        },
+        {
+            "id_venta": 14,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 5,
+                "nombre": "Carlos Sánchez Torres"
+            },
+            "trabajador": {
+                "id_trabajador": 8,
+                "nombre_t": "Ana Karina Velasco Morales"
+            }
+        },
+        {
+            "id_venta": 15,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Mixto",
+            "cliente": {
+                "id_cliente": 2,
+                "nombre": "María Gómez López"
+            },
+            "trabajador": {
+                "id_trabajador": 3,
+                "nombre_t": "Israel Galvan Rojas"
+            }
+        },
+        {
+            "id_venta": 16,
+            "fecha": "2024-09-18",
+            "metodo_pago": "Tarjeta",
+            "cliente": {
+                "id_cliente": 12,
+                "nombre": "Patricia Morales Ortega"
+            },
+            "trabajador": {
+                "id_trabajador": 7,
+                "nombre_t": "Carlos Eduardo Martínez Sánchez"
+            }
+        },
+        {
+            "id_venta": 17,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Tarjeta",
+            "cliente": {
+                "id_cliente": 5,
+                "nombre": "Carlos Sánchez Torres"
+            },
+            "trabajador": {
+                "id_trabajador": 1,
+                "nombre_t": "Jovita lizeth Galvan Rojas"
+            }
+        },
+        {
+            "id_venta": 18,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 1,
+                "nombre": "Juan Pérez García"
+            },
+            "trabajador": {
+                "id_trabajador": 1,
+                "nombre_t": "Jovita lizeth Galvan Rojas"
+            }
+        },
+        {
+            "id_venta": 19,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 12,
+                "nombre": "Patricia Morales Ortega"
+            },
+            "trabajador": {
+                "id_trabajador": 2,
+                "nombre_t": "Mitzu Sayin Galvan Rojas"
+            }
+        },
+        {
+            "id_venta": 20,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 7,
+                "nombre": "Javier Díaz Castro"
+            },
+            "trabajador": {
+                "id_trabajador": 2,
+                "nombre_t": "Mitzu Sayin Galvan Rojas"
+            }
+        },
+        {
+            "id_venta": 21,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 3,
+                "nombre": "Luis Rodríguez Martínez"
+            },
+            "trabajador": {
+                "id_trabajador": 2,
+                "nombre_t": "Mitzu Sayin Galvan Rojas"
+            }
+        },
+        {
+            "id_venta": 22,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Tarjeta",
+            "cliente": {
+                "id_cliente": 2,
+                "nombre": "María Gómez López"
+            },
+            "trabajador": {
+                "id_trabajador": 4,
+                "nombre_t": "Sofia García Hernández"
+            }
+        },
+        {
+            "id_venta": 23,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 10,
+                "nombre": "Elena Fernández Ruiz"
+            },
+            "trabajador": {
+                "id_trabajador": 6,
+                "nombre_t": "María Fernanda Rodríguez Gómez"
+            }
+        },
+        {
+            "id_venta": 24,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Tarjeta",
+            "cliente": {
+                "id_cliente": 7,
+                "nombre": "Javier Díaz Castro"
+            },
+            "trabajador": {
+                "id_trabajador": 10,
+                "nombre_t": "Daniela Alejandra Torres Ortiz"
+            }
+        },
+        {
+            "id_venta": 25,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Mixto",
+            "cliente": {
+                "id_cliente": 9,
+                "nombre": "Miguel Torres Jiménez"
+            },
+            "trabajador": {
+                "id_trabajador": 6,
+                "nombre_t": "María Fernanda Rodríguez Gómez"
+            }
+        },
+        {
+            "id_venta": 26,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 1,
+                "nombre": "Juan Pérez García"
+            },
+            "trabajador": {
+                "id_trabajador": 5,
+                "nombre_t": "Juan Pablo López Ramírez"
+            }
+        },
+        {
+            "id_venta": 28,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Tarjeta",
+            "cliente": {
+                "id_cliente": 3,
+                "nombre": "Luis Rodríguez Martínez"
+            },
+            "trabajador": {
+                "id_trabajador": 3,
+                "nombre_t": "Israel Galvan Rojas"
+            }
+        },
+        {
+            "id_venta": 29,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 5,
+                "nombre": "Carlos Sánchez Torres"
+            },
+            "trabajador": {
+                "id_trabajador": 8,
+                "nombre_t": "Ana Karina Velasco Morales"
+            }
+        },
+        {
+            "id_venta": 30,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 2,
+                "nombre": "María Gómez López"
+            },
+            "trabajador": {
+                "id_trabajador": 3,
+                "nombre_t": "Israel Galvan Rojas"
+            }
+        },
+        {
+            "id_venta": 31,
+            "fecha": "2024-10-10",
+            "metodo_pago": "Efectivo",
+            "cliente": {
+                "id_cliente": 12,
+                "nombre": "Patricia Morales Ortega"
+            },
+            "trabajador": {
+                "id_trabajador": 7,
+                "nombre_t": "Carlos Eduardo Martínez Sánchez"
+            }
+        }
+    ]
+)

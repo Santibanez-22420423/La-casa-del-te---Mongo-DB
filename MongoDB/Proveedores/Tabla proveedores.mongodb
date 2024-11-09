@@ -1,0 +1,28 @@
+use("La_casa_del_te")
+
+db.createCollection("proveedores", {
+    validator:{
+        $jsonSchema:{
+            title: 'Validacion del objeto proveedores',
+            required: ['id_proveedor', 'nombre', 'direccion', 'celular'],
+            properties: {
+                id_proveedor: {
+                    bsonType: 'int',
+                    description: 'Id del proveedor'
+                },
+                nombre: {
+                    bsonType: 'string',
+                    description: 'Nombre del proveedor',
+                },
+                direccion: {
+                    bsonType: 'string',
+                    description: 'Direccion del proveedor'
+                },
+                celular:{
+                    bsonType: 'string',
+                    description: 'Celular del proveedor'
+                }
+            }
+        }
+    }
+})

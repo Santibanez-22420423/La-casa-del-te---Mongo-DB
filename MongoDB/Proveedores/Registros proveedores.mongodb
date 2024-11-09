@@ -1,0 +1,36 @@
+use("La_casa_del_te")
+
+db.proveedores.insertMany(
+    [
+        {
+            "id_proveedor": 1,
+            "nombre": "El ángel de tu salud",
+            "direccion": "C.Ignacio Zaragoza 181, Centro, 44100 Guadalajara, Jalisco",
+            "celular": "3336144830"
+        },
+        {
+            "id_proveedor": 2,
+            "nombre": "Centro Botánico Azteca",
+            "direccion": "C. San Felipe 369, Zona Centro, 44100 Guadajalara, Jalisco",
+            "celular": "3336585664"
+        },
+        {
+            "id_proveedor": 3,
+            "nombre": "Grupo Ypenza de México S.A. de C.V.",
+            "direccion": "Volcán Quinceo 201, Paraísos del Colli, 45069 Zapopan, Jalisco",
+            "celular": "3336204228"
+        },
+        {
+            "id_proveedor": 4,
+            "nombre": "Dacdaraf",
+            "direccion": "C. Ignacio Zaragoza 159, Zona Centro, 44100 Guadalajara, Jalisco",
+            "celular": "3336144009"
+        },
+        {
+            "id_proveedor": 5,
+            "nombre": "Shanaturals",
+            "direccion": "Av. Tabachines 3514, Loma Bonita Ejidal, 45085 Zapopan, Jalisco",
+            "celular": "3318148007"
+        }
+    ]
+)

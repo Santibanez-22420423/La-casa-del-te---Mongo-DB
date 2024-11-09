@@ -1,0 +1,38 @@
+use("La_casa_del_te")
+
+db.createCollection("proveedores", {
+    validator:{
+        $jsonSchema:{
+            title: 'Validacion del objeto proveedores',
+            required: ['id_trabajador_jornada', 'id_trabajador', 'id_jornada'],
+            properties: {
+                id_trabajador_jornada: {
+                    bsonType: 'int'
+                },
+                id_trabajador: {
+                    bsonType: 'int'
+                },
+                jornadas: {
+                    bsonType: 'object',
+                    properties: {
+                        id_jornada: {
+                            bsonType: 'int'
+                        },
+                        hora_inicio: {
+                            bsonType: 'string'
+                        },
+                        hora_fin: {
+                            bsonType: 'string'
+                        }
+                    }
+                },
+                fecha_inicio: {
+                    bsonType: 'date'
+                },
+                fecha_fin: {
+                    bsonType: 'date'
+                }
+            }
+        }
+    }
+})    
