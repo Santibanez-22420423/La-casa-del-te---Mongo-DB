@@ -1,0 +1,188 @@
+use("La_casa_del_te")
+
+db.devoluciones_compras.insertMany(
+    [
+        {
+            "id_devolucion_compra": 3,
+            "id_compra": 1,
+            "id_producto": 5,
+            "fecha": new Date("2022-01-11"),
+            "cantidad": 1,
+            "unitario": 76,
+            "subtotal": 76.0000
+        },
+        {
+            "id_devolucion_compra": 4,
+            "id_compra": 1,
+            "id_producto": 7,
+            "fecha": new Date("2022-01-11"),
+            "cantidad": 2,
+            "unitario": 250,
+            "subtotal": 500.0000
+        },
+        {
+            "id_devolucion_compra": 5,
+            "id_compra": 8,
+            "id_producto": 8,
+            "fecha": new Date("2022-04-27"),
+            "cantidad": 2,
+            "unitario": 270,
+            "subtotal": 540.0000
+        },
+        {
+            "id_devolucion_compra": 6,
+            "id_compra": 2,
+            "id_producto": 2,
+            "fecha": new Date("2022-01-26"),
+            "cantidad": 3,
+            "unitario": 89,
+            "subtotal": 267.0000
+        },
+        {
+            "id_devolucion_compra": 7,
+            "id_compra": 2,
+            "id_producto": 3,
+            "fecha": new Date("2022-01-26"),
+            "cantidad": 2,
+            "unitario": 138,
+            "subtotal": 276.0000
+        },
+        {
+            "id_devolucion_compra": 8,
+            "id_compra": 2,
+            "id_producto": 12,
+            "fecha": new Date("2022-01-26"),
+            "cantidad": 1,
+            "unitario": 53,
+            "subtotal": 53.0000
+        },
+        {
+            "id_devolucion_compra": 9,
+            "id_compra": 3,
+            "id_producto": 8,
+            "fecha": new Date("2022-02-10"),
+            "cantidad": 2,
+            "unitario": 270,
+            "subtotal": 540.0000
+        },
+        {
+            "id_devolucion_compra": 10,
+            "id_compra": 3,
+            "id_producto": 8,
+            "fecha": new Date("2022-02-10"),
+            "cantidad": 1,
+            "unitario": 270,
+            "subtotal": 270.0000
+        },
+        {
+            "id_devolucion_compra": 11,
+            "id_compra": 3,
+            "id_producto": 8,
+            "fecha": new Date("2022-02-10"),
+            "cantidad": 1,
+            "unitario": 270,
+            "subtotal": 270.0000
+        },
+        {
+            "id_devolucion_compra": 12,
+            "id_compra": 4,
+            "id_producto": 15,
+            "fecha": new Date("2022-02-25"),
+            "cantidad": 2,
+            "unitario": 80,
+            "subtotal": 160.0000
+        },
+        {
+            "id_devolucion_compra": 13,
+            "id_compra": 4,
+            "id_producto": 6,
+            "fecha": new Date("2022-02-25"),
+            "cantidad": 1,
+            "unitario": 85,
+            "subtotal": 85.0000
+        },
+        {
+            "id_devolucion_compra": 14,
+            "id_compra": 4,
+            "id_producto": 10,
+            "fecha": new Date("2022-02-25"),
+            "cantidad": 3,
+            "unitario": 85,
+            "subtotal": 255.0000
+        },
+        {
+            "id_devolucion_compra": 15,
+            "id_compra": 5,
+            "id_producto": 4,
+            "fecha": new Date("2022-03-13"),
+            "cantidad": 1,
+            "unitario": 95,
+            "subtotal": 95.0000
+        },
+        {
+            "id_devolucion_compra": 16,
+            "id_compra": 5,
+            "id_producto": 11,
+            "fecha": new Date("2022-03-13"),
+            "cantidad": 2,
+            "unitario": 103,
+            "subtotal": 206.0000
+        },
+        {
+            "id_devolucion_compra": 17,
+            "id_compra": 5,
+            "id_producto": 4,
+            "fecha": new Date("2022-03-13"),
+            "cantidad": 1,
+            "unitario": 95,
+            "subtotal": 95.0000
+        },
+        {
+            "id_devolucion_compra": 18,
+            "id_compra": 6,
+            "id_producto": 15,
+            "fecha": new Date("2022-03-27"),
+            "cantidad": 2,
+            "unitario": 80,
+            "subtotal": 160.0000
+        },
+        {
+            "id_devolucion_compra": 19,
+            "id_compra": 6,
+            "id_producto": 15,
+            "fecha": new Date("2022-03-27"),
+            "cantidad": 2,
+            "unitario": 80,
+            "subtotal": 160.0000
+        },
+        {
+            "id_devolucion_compra": 20,
+            "id_compra": 6,
+            "id_producto": 15,
+            "fecha": ("2022-03-27"),
+            "cantidad": 2,
+            "unitario": 80,
+            "subtotal": 160.0000
+        },
+        {
+            "id_devolucion_compra": 21,
+            "id_compra": 7,
+            "id_producto": 9,
+            "fecha": "2022-03-27",
+            "fecha": ("2022-04-12"),
+            "cantidad": 2,
+            "unitario": 85,
+            "subtotal": 170.0000
+        },
+        {
+            "id_devolucion_compra": 22,
+            "id_compra": 7,
+            "id_producto": 16,
+            "fecha": "2022-03-27",
+            "fecha": ("2022-04-12"),
+            "cantidad": 3,
+            "unitario": 74,
+            "subtotal": 222.0000
+        }
+    ]
+)
