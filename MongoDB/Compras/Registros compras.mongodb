@@ -1,0 +1,750 @@
+use("La_casa_del_te")
+
+db.compras.insertMany(
+    [
+        {
+            "id_compra": 1,
+            "fecha": new Date("2022-01-10"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2022-01-11"),
+            "proveedor": {
+                "id_proveedor": 1,
+                "nombre": "El ángel de tu salud"
+            },
+            "detalle_productos_compras": [
+                {
+                    "id_producto_compra": 1,
+                    "id_producto": 1,
+                    "nombre": "Castaño de indias",
+                    "cantidad": 5,
+                    "unitario": 46.00,
+                    "subtotal": 230.00
+                },
+                {
+                    "id_producto_compra": 2,
+                    "id_producto": 5,
+                    "nombre": "Ajo negro",
+                    "cantidad": 2,
+                    "unitario": 76.00,
+                    "subtotal": 152.00
+                },
+                {
+                    "id_producto_compra": 3,
+                    "id_producto": 7,
+                    "nombre": "Omega 3 Alaska",
+                    "cantidad": 3,
+                    "unitario": 250.00,
+                    "subtotal": 750.00
+                },
+                {
+                    "id_producto_compra": 4,
+                    "id_producto": 10,
+                    "nombre": "Espinoforte",
+                    "cantidad": 5,
+                    "unitario": 85.00,
+                    "subtotal": 425.00
+                },
+                {
+                    "id_producto_compra": 26,
+                    "id_producto": 1,
+                    "nombre": "Castaño de indias",
+                    "cantidad": 5,
+                    "unitario": 46.00,
+                    "subtotal": 230.00
+                },
+                {
+                    "id_producto_compra": 27,
+                    "id_producto": 5,
+                    "nombre": "Ajo negro",
+                    "cantidad": 2,
+                    "unitario": 76.00,
+                    "subtotal": 152.00
+                },
+                {
+                    "id_producto_compra": 28,
+                    "id_producto": 7,
+                    "nombre": "Omega 3 Alaska",
+                    "cantidad": 3,
+                    "unitario": 250.00,
+                    "subtotal": 750.00
+                },
+                {
+                    "id_producto_compra": 29,
+                    "id_producto": 10,
+                    "nombre": "Espinoforte",
+                    "cantidad": 5,
+                    "unitario": 85.00,
+                    "subtotal": 425.00
+                }
+            ],
+            "total": 3114.00
+        },
+        {
+            "id_compra": 2,
+            "fecha": new Date("2022-01-25"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2022-01-26"),
+            "proveedor": {
+                "id_proveedor": 2,
+                "nombre": "Centro Botánico Azteca"
+            },
+            "detalle_productos_compras": [
+                {
+                    "id_producto_compra": 5,
+                    "id_producto": 2,
+                    "nombre": "No varis",
+                    "cantidad": 5,
+                    "unitario": 89.00,
+                    "subtotal": 445.00
+                },
+                {
+                    "id_producto_compra": 6,
+                    "id_producto": 3,
+                    "nombre": "Hemorrostop",
+                    "cantidad": 9,
+                    "unitario": 138.00,
+                    "subtotal": 1242.00
+                },
+                {
+                    "id_producto_compra": 7,
+                    "id_producto": 12,
+                    "nombre": "Valeriana",
+                    "cantidad": 1,
+                    "unitario": 53.00,
+                    "subtotal": 53.00
+                },
+                {
+                    "id_producto_compra": 30,
+                    "id_producto": 2,
+                    "nombre": "No varis",
+                    "cantidad": 5,
+                    "unitario": 89.00,
+                    "subtotal": 445.00
+                },
+                {
+                    "id_producto_compra": 31,
+                    "id_producto": 3,
+                    "nombre": "Hemorrostop",
+                    "cantidad": 9,
+                    "unitario": 138.00,
+                    "subtotal": 1242.00
+                },
+                {
+                    "id_producto_compra": 32,
+                    "id_producto": 12,
+                    "nombre": "Valeriana",
+                    "cantidad": 1,
+                    "unitario": 53.00,
+                    "subtotal": 53.00
+                }
+            ],
+            "total": 3480.00
+        },
+        {
+            "id_compra": 3,
+            "fecha": new Date("2022-02-09"),
+            "metodo_pago": "Tarjeta",
+            "fecha_entrega": new Date("2022-02-10"),
+            "proveedor": {
+                "id_proveedor": 3,
+                "nombre": "Grupo Ypenza de México S.A. de C.V."
+            },
+            "detalle_productos_compras": [
+                {
+                    "id_producto_compra": 8,
+                    "id_producto": 8,
+                    "nombre": "Omega 3 premium",
+                    "cantidad": 10,
+                    "unitario": 270.00,
+                    "subtotal": 2700.00
+                },
+                {
+                    "id_producto_compra": 33,
+                    "id_producto": 8,
+                    "nombre": "Omega 3 premium",
+                    "cantidad": 10,
+                    "unitario": 270.00,
+                    "subtotal": 2700.00
+                }
+            ],
+            "total": 5400.00
+        },
+        {
+            "id_compra": 4,
+            "fecha": new Date("2022-02-24"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2022-02-25"),
+            "proveedor": {
+                "id_proveedor": 4,
+                "nombre": "Dacdaraf"
+            },
+            "detalle_productos_compras": [
+                {
+                    "id_producto_compra": 9,
+                    "id_producto": 15,
+                    "nombre": "Guayacol",
+                    "cantidad": 4,
+                    "unitario": 80.00,
+                    "subtotal": 320.00
+                },
+                {
+                    "id_producto_compra": 10,
+                    "id_producto": 12,
+                    "nombre": "Valeriana",
+                    "cantidad": 1,
+                    "unitario": 53.00,
+                    "subtotal": 53.00
+                },
+                {
+                    "id_producto_compra": 11,
+                    "id_producto": 6,
+                    "nombre": "Hierba del sapo",
+                    "cantidad": 3,
+                    "unitario": 85.00,
+                    "subtotal": 255.00
+                },
+                {
+                    "id_producto_compra": 12,
+                    "id_producto": 10,
+                    "nombre": "Espinoforte",
+                    "cantidad": 5,
+                    "unitario": 85.00,
+                    "subtotal": 425.00
+                },
+                {
+                    "id_producto_compra": 13,
+                    "id_producto": 1,
+                    "nombre": "Castaño de indias",
+                    "cantidad": 3,
+                    "unitario": 46.00,
+                    "subtotal": 138.00
+                },
+                {
+                    "id_producto_compra": 34,
+                    "id_producto": 15,
+                    "nombre": "Guayacol",
+                    "cantidad": 4,
+                    "unitario": 80.00,
+                    "subtotal": 320.00
+                },
+                {
+                    "id_producto_compra": 35,
+                    "id_producto": 12,
+                    "nombre": "Valeriana",
+                    "cantidad": 1,
+                    "unitario": 53.00,
+                    "subtotal": 53.00
+                },
+                {
+                    "id_producto_compra": 36,
+                    "id_producto": 6,
+                    "nombre": "Hierba del sapo",
+                    "cantidad": 3,
+                    "unitario": 85.00,
+                    "subtotal": 255.00
+                },
+                {
+                    "id_producto_compra": 37,
+                    "id_producto": 10,
+                    "nombre": "Espinoforte",
+                    "cantidad": 5,
+                    "unitario": 85.00,
+                    "subtotal": 425.00
+                },
+                {
+                    "id_producto_compra": 38,
+                    "id_producto": 1,
+                    "nombre": "Castaño de indias",
+                    "cantidad": 3,
+                    "unitario": 46.00,
+                    "subtotal": 138.00
+                }
+            ],
+            "total": 2382.00
+        },
+        {
+            "id_compra": 5,
+            "fecha": new Date("2022-03-12"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2022-03-13"),
+            "proveedor": {
+                "id_proveedor": 1,
+                "nombre": "El ángel de tu salud"
+            },
+            "detalle_productos_compras": [
+                {
+                    "id_producto_compra": 14,
+                    "id_producto": 4,
+                    "nombre": "Varisalud",
+                    "cantidad": 5,
+                    "unitario": 95.00,
+                    "subtotal": 475.00
+                },
+                {
+                    "id_producto_compra": 15,
+                    "id_producto": 11,
+                    "nombre": "Taflavix",
+                    "cantidad": 6,
+                    "unitario": 103.00,
+                    "subtotal": 618.00
+                },
+                {
+                    "id_producto_compra": 39,
+                    "id_producto": 4,
+                    "nombre": "Varisalud",
+                    "cantidad": 5,
+                    "unitario": 95.00,
+                    "subtotal": 475.00
+                },
+                {
+                    "id_producto_compra": 40,
+                    "id_producto": 11,
+                    "nombre": "Taflavix",
+                    "cantidad": 6,
+                    "unitario": 103.00,
+                    "subtotal": 618.00
+                }
+            ],
+            "total": 2186.00
+        },
+        {
+            "id_compra": 6,
+            "fecha": new Date("2022-03-27"),
+            "metodo_pago": "Mixto",
+            "fecha_entrega": new Date("2022-03-28"),
+            "proveedor": {
+                "id_proveedor": 2,
+                "nombre": "Centro Botánico Azteca"
+            },
+            "detalle_productos_compras": [
+                {
+                    "id_producto_compra": 16,
+                    "id_producto": 15,
+                    "nombre": "Guayacol",
+                    "cantidad": 8,
+                    "unitario": 80.00,
+                    "subtotal": 640.00
+                },
+                {
+                    "id_producto_compra": 41,
+                    "id_producto": 15,
+                    "nombre": "Guayacol",
+                    "cantidad": 8,
+                    "unitario": 80.00,
+                    "subtotal": 640.00
+                }
+            ],
+            "total": 1280.00
+        },
+        {
+            "id_compra": 7,
+            "fecha": new Date("2022-04-11"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2022-04-12"),
+            "proveedor": {
+                "id_proveedor": 3,
+                "nombre": "Grupo Ypenza de México S.A. de C.V."
+            },
+            "detalle_productos_compras": [
+                {
+                    "id_producto_compra": 17,
+                    "id_producto": 2,
+                    "nombre": "No varis",
+                    "cantidad": 2,
+                    "unitario": 89.00,
+                    "subtotal": 178.00
+                },
+                {
+                    "id_producto_compra": 18,
+                    "id_producto": 9,
+                    "nombre": "Neo San Juan",
+                    "cantidad": 4,
+                    "unitario": 85.00,
+                    "subtotal": 340.00
+                },
+                {
+                    "id_producto_compra": 19,
+                    "id_producto": 16,
+                    "nombre": "Eucamiel",
+                    "cantidad": 7,
+                    "unitario": 74.00,
+                    "subtotal": 518.00
+                },
+                {
+                    "id_producto_compra": 42,
+                    "id_producto": 2,
+                    "nombre": "No varis",
+                    "cantidad": 2,
+                    "unitario": 89.00,
+                    "subtotal": 178.00
+                },
+                {
+                    "id_producto_compra": 43,
+                    "id_producto": 9,
+                    "nombre": "Neo San Juan",
+                    "cantidad": 4,
+                    "unitario": 85.00,
+                    "subtotal": 340.00
+                },
+                {
+                    "id_producto_compra": 44,
+                    "id_producto": 16,
+                    "nombre": "Eucamiel",
+                    "cantidad": 7,
+                    "unitario": 74.00,
+                    "subtotal": 518.00
+                }
+            ],
+            "total": 2072.00
+        },
+        {
+            "id_compra": 8,
+            "fecha": new Date("2022-04-26"),
+            "metodo_pago": "Tarjeta",
+            "fecha_entrega": new Date("2022-04-27"),
+            "proveedor": {
+                "id_proveedor": 4,
+                "nombre": "Dacdaraf"
+            },
+            "detalle_productos_compras": [
+                {
+                    "id_producto_compra": 20,
+                    "id_producto": 13,
+                    "nombre": "Vitabronc",
+                    "cantidad": 3,
+                    "unitario": 58.00,
+                    "subtotal": 174.00
+                },
+                {
+                    "id_producto_compra": 21,
+                    "id_producto": 9,
+                    "nombre": "Neo San Juan",
+                    "cantidad": 5,
+                    "unitario": 85.00,
+                    "subtotal": 425.00
+                },
+                {
+                    "id_producto_compra": 22,
+                    "id_producto": 2,
+                    "nombre": "No varis",
+                    "cantidad": 7,
+                    "unitario": 89.00,
+                    "subtotal": 623.00
+                },
+                {
+                    "id_producto_compra": 23,
+                    "id_producto": 8,
+                    "nombre": "Omega 3 premium",
+                    "cantidad": 4,
+                    "unitario": 270.00,
+                    "subtotal": 1080.00
+                },
+                {
+                    "id_producto_compra": 24,
+                    "id_producto": 15,
+                    "nombre": "Guayacol",
+                    "cantidad": 3,
+                    "unitario": 80.00,
+                    "subtotal": 240.00
+                },
+                {
+                    "id_producto_compra": 25,
+                    "id_producto": 11,
+                    "nombre": "Taflavix",
+                    "cantidad": 6,
+                    "unitario": 103.00,
+                    "subtotal": 618.00
+                },
+                {
+                    "id_producto_compra": 45,
+                    "id_producto": 13,
+                    "nombre": "Vitabronc",
+                    "cantidad": 3,
+                    "unitario": 58.00,
+                    "subtotal": 174.00
+                },
+                {
+                    "id_producto_compra": 46,
+                    "id_producto": 9,
+                    "nombre": "Neo San Juan",
+                    "cantidad": 5,
+                    "unitario": 85.00,
+                    "subtotal": 425.00
+                },
+                {
+                    "id_producto_compra": 47,
+                    "id_producto": 2,
+                    "nombre": "No varis",
+                    "cantidad": 7,
+                    "unitario": 89.00,
+                    "subtotal": 623.00
+                },
+                {
+                    "id_producto_compra": 48,
+                    "id_producto": 8,
+                    "nombre": "Omega 3 premium",
+                    "cantidad": 4,
+                    "unitario": 270.00,
+                    "subtotal": 1080.00
+                },
+                {
+                    "id_producto_compra": 49,
+                    "id_producto": 15,
+                    "nombre": "Guayacol",
+                    "cantidad": 3,
+                    "unitario": 80.00,
+                    "subtotal": 240.00
+                },
+                {
+                    "id_producto_compra": 50,
+                    "id_producto": 11,
+                    "nombre": "Taflavix",
+                    "cantidad": 6,
+                    "unitario": 103.00,
+                    "subtotal": 618.00
+                }
+            ],
+            "total": 6320.00
+        },
+        {
+            "id_compra": 9,
+            "fecha": new Date("2022-05-11"),
+            "metodo_pago": "Tarjeta",
+            "fecha_entrega": new Date("2022-05-12"),
+            "proveedor": {
+                "id_proveedor": 1,
+                "nombre": "El ángel de tu salud"
+            }
+        },
+        {
+            "id_compra": 10,
+            "fecha": new Date("2022-06-26"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2022-06-27"),
+            "proveedor": {
+                "id_proveedor": 2,
+                "nombre": "Centro Botánico Azteca"
+            }
+        },
+        {
+            "id_compra": 11,
+            "fecha": new Date("2022-07-11"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2022-07-12"),
+            "proveedor": {
+                "id_proveedor": 3,
+                "nombre": "Grupo Ypenza de México S.A. de C.V."
+            }
+        },
+        {
+            "id_compra": 12,
+            "fecha": new Date("2022-07-26"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2022-07-27"),
+            "proveedor": {
+                "id_proveedor": 4,
+                "nombre": "Dacdaraf"
+            }
+        },
+        {
+            "id_compra": 13,
+            "fecha": new Date("2022-08-10"),
+            "metodo_pago": "Tarjeta",
+            "fecha_entrega": new Date("2022-08-11"),
+            "proveedor": {
+                "id_proveedor": 1,
+                "nombre": "El ángel de tu salud"
+            }
+        },
+        {
+            "id_compra": 14,
+            "fecha": new Date("2022-08-25"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2022-08-26"),
+            "proveedor": {
+                "id_proveedor": 2,
+                "nombre": "Centro Botánico Azteca"
+            }
+        },
+        {
+            "id_compra": 15,
+            "fecha": new Date("2022-09-09"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2022-09-10"),
+            "proveedor": {
+                "id_proveedor": 2,
+                "nombre": "Centro Botánico Azteca"
+            }
+        },
+        {
+            "id_compra": 16,
+            "fecha": new Date("2022-09-24"),
+            "metodo_pago": "Mixto",
+            "fecha_entrega": new Date("2022-09-25"),
+            "proveedor": {
+                "id_proveedor": 4,
+                "nombre": "Dacdaraf"
+            }
+        },
+        {
+            "id_compra": 17,
+            "fecha": new Date("2023-01-10"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2023-01-11"),
+            "proveedor": {
+                "id_proveedor": 1,
+                "nombre": "El ángel de tu salud"
+            }
+        },
+        {
+            "id_compra": 18,
+            "fecha": new Date("2023-01-25"),
+            "metodo_pago": "Tarjeta",
+            "fecha_entrega": new Date("2023-01-26"),
+            "proveedor": {
+                "id_proveedor": 2,
+                "nombre": "Centro Botánico Azteca"
+            }
+        },
+        {
+            "id_compra": 19,
+            "fecha": new Date("2023-02-09"),
+            "metodo_pago": "Tarjeta",
+            "fecha_entrega": new Date("2023-02-10"),
+            "proveedor": {
+                "id_proveedor": 3,
+                "nombre": "Grupo Ypenza de México S.A. de C.V."
+            }
+        },
+        {
+            "id_compra": 20,
+            "fecha": new Date("2023-02-24"),
+            "metodo_pago": "Tarjeta",
+            "fecha_entrega": new Date("2023-02-25"),
+            "proveedor": {
+                "id_proveedor": 4,
+                "nombre": "Dacdaraf"
+            }
+        },
+        {
+            "id_compra": 21,
+            "fecha": new Date("2023-03-12"),
+            "metodo_pago": "Tarjeta",
+            "fecha_entrega": new Date("2023-03-13"),
+            "proveedor": {
+                "id_proveedor": 1,
+                "nombre": "El ángel de tu salud"
+            }
+        },
+        {
+            "id_compra": 22,
+            "fecha": new Date("2023-03-27"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2023-03-28"),
+            "proveedor": {
+                "id_proveedor": 2,
+                "nombre": "Centro Botánico Azteca"
+            }
+        },
+        {
+            "id_compra": 23,
+            "fecha": new Date("2023-04-11"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2023-04-12"),
+            "proveedor": {
+                "id_proveedor": 3,
+                "nombre": "Grupo Ypenza de México S.A. de C.V."
+            }
+        },
+        {
+            "id_compra": 24,
+            "fecha": new Date("2023-04-26"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2023-04-27"),
+            "proveedor": {
+                "id_proveedor": 4,
+                "nombre": "Dacdaraf"
+            }
+        },
+        {
+            "id_compra": 25,
+            "fecha": new Date("2023-05-11"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2023-05-12"),
+            "proveedor": {
+                "id_proveedor": 1,
+                "nombre": "El ángel de tu salud"
+            }
+        },
+        {
+            "id_compra": 26,
+            "fecha": new Date("2023-06-26"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2023-06-27"),
+            "proveedor": {
+                "id_proveedor": 2,
+                "nombre": "Centro Botánico Azteca"
+            }
+        },
+        {
+            "id_compra": 27,
+            "fecha": new Date("2023-07-11"),
+            "metodo_pago": "Tarjeta",
+            "fecha_entrega": new Date("2023-07-12"),
+            "proveedor": {
+                "id_proveedor": 3,
+                "nombre": "Grupo Ypenza de México S.A. de C.V."
+            }
+        },
+        {
+            "id_compra": 28,
+            "fecha": new Date("2023-07-26"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2023-07-27"),
+            "proveedor": {
+                "id_proveedor": 4,
+                "nombre": "Dacdaraf"
+            }
+        },
+        {
+            "id_compra": 29,
+            "fecha": new Date("2023-08-10"),
+            "metodo_pago": "Tarjeta",
+            "fecha_entrega": new Date("2023-08-11"),
+            "proveedor": {
+                "id_proveedor": 1,
+                "nombre": "El ángel de tu salud"
+            }
+        },
+        {
+            "id_compra": 30,
+            "fecha": new Date("2023-08-25"),
+            "metodo_pago": "Tarjeta",
+            "fecha_entrega": new Date("2023-08-25"),
+            "proveedor": {
+                "id_proveedor": 2,
+                "nombre": "Centro Botánico Azteca"
+            }
+        },
+        {
+            "id_compra": 31,
+            "fecha": new Date("2023-09-09"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2023-09-10"),
+            "proveedor": {
+                "id_proveedor": 2,
+                "nombre": "Centro Botánico Azteca"
+            }
+        },
+        {
+            "id_compra": 32,
+            "fecha": new Date("2023-09-24"),
+            "metodo_pago": "Efectivo",
+            "fecha_entrega": new Date("2023-09-25"),
+            "proveedor": {
+                "id_proveedor": 4,
+                "nombre": "Dacdaraf"
+            }
+        }
+    ]
+)
