@@ -1,0 +1,25 @@
+use("La_casa_del_te")
+
+db.createCollection("lotes", {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validation del objeto lotes',
+            required: ['id_lote', 'fecha_lote', 'caducidad'],
+            properties: {
+                id_lote: {
+                    bsonType: 'int',
+                    description: 'Id del lote'
+                },
+                fecha_lote: {
+                    bsonType: 'date',
+                    description: 'Fecha en la que se produjo el lote'
+                },
+                caducidad: {
+                    bsonType: 'date',
+                    description: 'Caducidad de los productos del lote'
+                }
+            }
+        }
+    }
+})
